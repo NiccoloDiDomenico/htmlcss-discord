@@ -27,6 +27,7 @@ img {
 
     #265ee9
     #23272a
+    #7389da
 } */
 
 
@@ -63,16 +64,24 @@ img {
     margin: 0 auto;
     text-align: center;
     color: white;
-    padding: 0 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    row-gap: 30px;
+    row-gap: 20px;
 
     /* debug */
     min-height: 310px;
     /* background-color: #ee81ee; */
-    /* border: 2px dashed black; */
+    border: 2px dashed black;
+}
+
+.container.big {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px; 
+    text-align: center;
 }
 
 /* banner-footer container */
@@ -106,6 +115,11 @@ a {
 .button.download {
     background-color: white;
     color: black;
+}
+
+.button.download2 {
+    background-color: #7389da;
+    color: white;
 }
 
 .button.browser {
