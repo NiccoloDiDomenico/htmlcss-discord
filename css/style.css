@@ -3,7 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;;
+    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    ;
 }
 
 img {
@@ -25,6 +26,7 @@ img {
     soft-green: #7fffd4;
 
     #265ee9
+    #23272a
 } */
 
 
@@ -60,11 +62,18 @@ img {
     width: 60%;
     max-width: 1100px;
     margin: 0 auto;
+    text-align: center;
+    color: white;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
 
     /* debug */
-    min-height: 200px;
-    background-color: #ee81ee;
-    border: 2px dashed black;
+    min-height: 310px;
+    /* background-color: #ee81ee; */
+    /* border: 2px dashed black; */
 }
 
 /* banner-footer container */
@@ -79,14 +88,30 @@ img {
 }
 
 /* UTILITY */
-a.link {
+a {
     text-decoration: none;
     color: white;
 }
 
-a.login {
-    text-decoration: none;
+/* BUTTON */
+.button {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.button.login {
+    background-color: white;
     color: black;
+}
+
+.button.download {
+    background-color: white;
+    color: black;
+}
+
+.button.browser {
+    background-color: #23272a;
+    color: white;
 }
 
 /* HEADER */
@@ -101,7 +126,7 @@ a.login {
 /* NAV MENU HEADER*/
 .nav {
     padding: 10px;
-    
+
     /* debug */
     /* height: 100px; */
     /* background-color: #daa521; */
@@ -124,12 +149,6 @@ a.login {
 .nav.access {
     width: 20%;
     text-align: end;
-}
-
-.login {
-    background-color: white;
-    padding: 10px;
-    border-radius: 20px;
 }
 
 /* NAV MENU FOOTER */
@@ -163,7 +182,11 @@ a.login {
 
 /* BACKGROUNDS */
 .bg-blue {
-    background-color: #00008b;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+
+    /* debug */
+    /* background-color: #00008b; */
 }
 
 .bg-white {
@@ -221,4 +244,7 @@ a.login {
     border: 2px dashed white;
 }
 
-
+/* ARTICLE */
+.title-article {
+    font-size: 2rem;
+}
