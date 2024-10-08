@@ -3,8 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    ;
+    font-family: whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 img {
@@ -50,6 +49,7 @@ img {
 /* banner-header container */
 .container.banner-header {
     background-color: #265ee9;
+    justify-content: space-between;
     align-items: center;
 
     /* debug */
@@ -64,12 +64,12 @@ img {
     margin: 0 auto;
     text-align: center;
     color: white;
-    min-height: 400px;
+    min-height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     row-gap: 20px;
-    
+
 
     /* debug */
     /* background-color: #ee81ee; */
@@ -102,9 +102,14 @@ a {
     color: white;
 }
 
+.mt-20 {
+    margin-top: 20px;
+}
+
 /* BUTTON */
 .button {
-    padding: 10px;
+    display: inline-block;
+    padding: 0.5em 1em;
     border-radius: 20px;
 }
 
@@ -154,18 +159,17 @@ a {
 }
 
 .nav.logo {
-    
+    width: 20%;
+
     /* debug */
-    /* width: 20%; */
     /* text-align: start; */
 }
 
 .nav.link-bar {
     width: 60%;
-    text-align: center;
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-around;
+    gap: 40px;
 }
 
 .nav.access {
@@ -175,13 +179,14 @@ a {
 
 /* SECTION */
 .section {
-    padding: 30px 0;
+    padding: 50px 0;
 }
 
 /* BACKGROUNDS */
 .bg-blue {
     background-image: url(../img/jumbo.png);
     background-size: cover;
+    background-position: center;
 
     /* debug */
     /* background-color: #00008b; */
@@ -247,12 +252,28 @@ a {
 }
 
 /* ARTICLE */
-.title-article {
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.section-title {
     font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero.paragraph {
+    line-height: 2;
 }
 
 .p-article {
-    line-height: 25px;
+    line-height: 30px;
+}
+
+.star-bg {
+    padding: 30px 30px 0 30px;
+    background-image: url(../img/stars.svg);
+    background-size: contain;
 }
 
 /* FOOTER */
@@ -264,12 +285,12 @@ ul {
     color: white;
 }
 
-.open.list1 {
+.footer-title {
     color: #7389da;
     font-size: 2rem;
 }
 
-.open.list2 {
+.open.list {
     color: #7389da;
     font-size: 1rem;
 }
@@ -282,4 +303,13 @@ ul {
 .icons {
     display: flex;
     gap: 20px;
+}
+
+.wave {
+    width: 100%;
+    display: block;
+}
+
+.reverse {
+    transform: rotate(180deg);
 }
